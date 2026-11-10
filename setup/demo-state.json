@@ -1,0 +1,1404 @@
+{
+  "web": "http://localhost:3000",
+  "password": "SecurePass123!",
+  "tenant": {
+    "id": "fb5762a2-3101-4657-9879-744bdbad6d86",
+    "slug": "meridian",
+    "name": "Meridian Contact Solutions"
+  },
+  "users": {
+    "admin": {
+      "id": "230f5eee-b6f2-4a6a-b054-feb6f3f75e76",
+      "email": "admin@meridian.test",
+      "name": "Dana Okafor",
+      "roles": [
+        "ADMIN"
+      ]
+    },
+    "analyst": {
+      "id": "b4f948d9-244c-45e2-b281-f1ecceae9858",
+      "email": "analyst@meridian.test",
+      "name": "Priya Raman",
+      "roles": [
+        "WFM_ANALYST"
+      ]
+    },
+    "supervisor": {
+      "id": "ab5b378c-b0f6-43b6-be89-78517a55d419",
+      "email": "supervisor@meridian.test",
+      "name": "Marcus Bell",
+      "roles": [
+        "SUPERVISOR"
+      ]
+    },
+    "vendor": {
+      "id": "73731beb-83fd-4aca-97d7-fa80f285356a",
+      "email": "vendor@atlasbpo.test",
+      "name": "Leo Hart",
+      "roles": [
+        "VENDOR"
+      ]
+    }
+  },
+  "sites": {
+    "Lagos": "0df16658-c09d-4842-b003-e41416bff4d4",
+    "Manila": "88d0c960-a9f8-4215-b3a2-c4c15aaae399",
+    "Austin": "3d82c7b7-5386-42f5-a57f-a7b43b3baa6e"
+  },
+  "skills": {
+    "English": "6033c0a2-9fd8-4cdd-9afd-8ef7f7cf85a6",
+    "Spanish": "11ae40ea-02a1-4b65-9651-9f917019c7bf",
+    "Billing": "b16937c9-9e99-4e34-88e2-a466e27b59c4",
+    "Tech Support": "88df2f8a-b7e3-4a2a-a76b-039db1f1ddd6"
+  },
+  "queues": {
+    "Voice – Northwind": "f42785b7-6e66-4078-a0b4-067b98cf2661",
+    "Voice – Brightline": "2b77bea8-93c7-49cc-8801-d45ffca213e4",
+    "Chat – Brightline": "ab8ca153-30a8-431e-9c9a-858c159c8b4b",
+    "Email – Cobalt": "4710a335-e8d1-4f11-92d7-017b2196b0ec",
+    "Voice – Harbor": "e83d7230-7ddc-4f52-a502-5d4b883f5d54"
+  },
+  "vendors": {
+    "Atlas BPO": {
+      "id": "fbbf5375-a402-4c13-8162-497564946e93",
+      "code": "ATL",
+      "portalUserEmail": "vendor@atlasbpo.test"
+    },
+    "Summit Connect": {
+      "id": "48afb383-f577-423e-858b-ff65c9587693",
+      "code": "SUM",
+      "portalUserEmail": null
+    }
+  },
+  "clients": {
+    "brightline": {
+      "id": "7c455bb6-6460-4c9e-8c4a-54c37c8f2aa3",
+      "campaignId": "a26bab5f-d42b-4772-a95a-07608df2a6bf",
+      "campaignName": "Customer Care",
+      "contractId": "dd6931f2-9c45-490d-a395-e2c1cdb71519",
+      "preset": "sla",
+      "queueNames": [
+        "Voice – Brightline",
+        "Chat – Brightline"
+      ],
+      "teamId": "57a24d5a-9c9f-476a-b84d-5ba4476c4bcb",
+      "teamName": "Brightline Care A",
+      "templateIds": [
+        "b996f895-171e-4357-84c4-e91b7101d019",
+        "5fb7aca5-ef2e-4f0f-8e92-f952c0a80b95",
+        "9831b1cd-249b-4b94-8888-d9cf049ae408",
+        "c0a9cb35-2133-4f65-a896-1877c661b667"
+      ],
+      "teamBId": "4d964320-3c2e-4a4e-86f5-a111bc1f9491",
+      "teamBName": "Brightline Care B"
+    },
+    "harbor": {
+      "id": "0e2bbdf7-ba81-4a97-b953-e8735ffdc12f",
+      "campaignId": "2f0a634b-0b65-43fb-8582-f2083f0bd771",
+      "campaignName": "Patient Line",
+      "contractId": "affe180c-6516-4e3f-8454-14da0a568ac5",
+      "preset": "headcount",
+      "queueNames": [
+        "Voice – Harbor"
+      ],
+      "teamId": "834d6ded-2f92-40dd-8cf9-6ffce04085f1",
+      "teamName": "Harbor Patient Line",
+      "templateIds": [
+        "49883f0a-4f44-4c8f-8250-ca5bce3e3f13",
+        "2e65d9db-ae29-44f3-be67-cd9ed7a24639"
+      ]
+    },
+    "cobalt": {
+      "id": "c8e0ff6c-4fc5-4314-b885-cc6a03038b4f",
+      "campaignId": "29e886f7-9206-4aee-b78e-f7222cf7ce28",
+      "campaignName": "Order Support",
+      "contractId": "0290bcf3-4788-4def-8300-f841c84baccf",
+      "preset": "workload",
+      "queueNames": [
+        "Email – Cobalt"
+      ],
+      "teamId": "d90d777d-a0cd-45bd-a652-02a32358491b",
+      "teamName": "Cobalt Order Desk",
+      "templateIds": [
+        "f0c6edaa-0113-4a74-b06f-852cfac87f2e",
+        "dacf9c19-86bb-4f54-8418-b03b587a752e"
+      ]
+    }
+  },
+  "agents": [
+    {
+      "id": "6e73f5b3-ecb2-4d41-a36e-31260f897550",
+      "userId": "9b5f5ec9-6a70-4b55-8237-a996b590c309",
+      "email": "amara.nwosu@meridian.test",
+      "firstName": "Amara",
+      "lastName": "Nwosu",
+      "site": "Lagos",
+      "group": "brightline",
+      "queues": [
+        "Voice – Brightline",
+        "Chat – Brightline"
+      ],
+      "channels": [
+        "VOICE",
+        "CHAT"
+      ],
+      "skills": [
+        "English",
+        "Billing"
+      ],
+      "vendor": null,
+      "startDate": "2022-03-14"
+    },
+    {
+      "id": "e6a85432-eb1c-486c-967a-dd3fb8f83778",
+      "userId": "20ef10b8-1865-4ff8-aab0-23119fb2d29e",
+      "email": "chinedu.okeke@meridian.test",
+      "firstName": "Chinedu",
+      "lastName": "Okeke",
+      "site": "Lagos",
+      "group": "brightline",
+      "queues": [
+        "Voice – Brightline",
+        "Chat – Brightline"
+      ],
+      "channels": [
+        "VOICE",
+        "CHAT"
+      ],
+      "skills": [
+        "English",
+        "Tech Support"
+      ],
+      "vendor": null,
+      "startDate": "2019-08-05"
+    },
+    {
+      "id": "95790dec-5f45-4453-a07e-5578d0b01330",
+      "userId": "b171511e-7d30-4e31-a358-1aec775321f7",
+      "email": "funmilayo.adeyemi@meridian.test",
+      "firstName": "Funmilayo",
+      "lastName": "Adeyemi",
+      "site": "Lagos",
+      "group": "brightline",
+      "queues": [
+        "Voice – Brightline",
+        "Chat – Brightline"
+      ],
+      "channels": [
+        "VOICE",
+        "CHAT"
+      ],
+      "skills": [
+        "English",
+        "Billing"
+      ],
+      "vendor": null,
+      "startDate": "2021-01-18"
+    },
+    {
+      "id": "9a51c048-c6a1-475e-9102-38d5842c4deb",
+      "userId": "8f2d6a93-2e87-485c-a19d-7dfa1a22d2f0",
+      "email": "tunde.bakare@meridian.test",
+      "firstName": "Tunde",
+      "lastName": "Bakare",
+      "site": "Lagos",
+      "group": "brightline",
+      "queues": [
+        "Voice – Brightline",
+        "Chat – Brightline"
+      ],
+      "channels": [
+        "VOICE",
+        "CHAT"
+      ],
+      "skills": [
+        "English",
+        "Tech Support"
+      ],
+      "vendor": null,
+      "startDate": "2023-06-26"
+    },
+    {
+      "id": "c72f903d-e60b-460b-a2fa-7c52b575f6ba",
+      "userId": "db516703-a876-43f2-8903-e749cfc498b2",
+      "email": "maria.santos@meridian.test",
+      "firstName": "Maria",
+      "lastName": "Santos",
+      "site": "Manila",
+      "group": "brightline",
+      "queues": [
+        "Voice – Brightline",
+        "Chat – Brightline"
+      ],
+      "channels": [
+        "VOICE",
+        "CHAT"
+      ],
+      "skills": [
+        "English",
+        "Billing"
+      ],
+      "vendor": "Atlas BPO",
+      "startDate": "2020-02-10"
+    },
+    {
+      "id": "d7f120c3-45f0-4112-8352-8004e35779b3",
+      "userId": "ec4ef5b5-60b9-4bfe-b5c2-b4f7ec97980f",
+      "email": "jose.delacruz@meridian.test",
+      "firstName": "Jose",
+      "lastName": "Dela Cruz",
+      "site": "Manila",
+      "group": "brightline",
+      "queues": [
+        "Voice – Brightline",
+        "Chat – Brightline"
+      ],
+      "channels": [
+        "VOICE",
+        "CHAT"
+      ],
+      "skills": [
+        "English",
+        "Tech Support"
+      ],
+      "vendor": "Atlas BPO",
+      "startDate": "2022-09-12"
+    },
+    {
+      "id": "de1f594b-2650-4863-8ac6-975f14b9e553",
+      "userId": "4eebbf64-61b4-47b5-8043-5ab0af89adc1",
+      "email": "angelica.reyes@meridian.test",
+      "firstName": "Angelica",
+      "lastName": "Reyes",
+      "site": "Manila",
+      "group": "brightline",
+      "queues": [
+        "Voice – Brightline",
+        "Chat – Brightline"
+      ],
+      "channels": [
+        "VOICE",
+        "CHAT"
+      ],
+      "skills": [
+        "English"
+      ],
+      "vendor": "Atlas BPO",
+      "startDate": "2024-04-01"
+    },
+    {
+      "id": "2bd20373-a95b-40a6-8929-4fc83518b9b8",
+      "userId": "e8782a3d-143e-4046-9cfc-9ba22be33c6c",
+      "email": "kevin.brooks@meridian.test",
+      "firstName": "Kevin",
+      "lastName": "Brooks",
+      "site": "Austin",
+      "group": "brightline",
+      "queues": [
+        "Voice – Brightline",
+        "Chat – Brightline"
+      ],
+      "channels": [
+        "VOICE",
+        "CHAT"
+      ],
+      "skills": [
+        "English",
+        "Tech Support"
+      ],
+      "vendor": null,
+      "startDate": "2018-11-19"
+    },
+    {
+      "id": "13e862a8-bc81-4441-ad36-81092d51bf3b",
+      "userId": "56955d02-1729-4907-93b1-c738498efed1",
+      "email": "sofia.martinez@meridian.test",
+      "firstName": "Sofia",
+      "lastName": "Martinez",
+      "site": "Austin",
+      "group": "brightline",
+      "queues": [
+        "Voice – Brightline",
+        "Chat – Brightline"
+      ],
+      "channels": [
+        "VOICE",
+        "CHAT"
+      ],
+      "skills": [
+        "English",
+        "Spanish",
+        "Billing"
+      ],
+      "vendor": null,
+      "startDate": "2021-07-07"
+    },
+    {
+      "id": "c54bed11-ae02-47ef-978a-5ffdf0901e3a",
+      "userId": "a651bd3b-13b8-4faa-ad6d-b1730bbe585f",
+      "email": "diego.hernandez@meridian.test",
+      "firstName": "Diego",
+      "lastName": "Hernandez",
+      "site": "Austin",
+      "group": "brightline",
+      "queues": [
+        "Voice – Brightline",
+        "Chat – Brightline"
+      ],
+      "channels": [
+        "VOICE",
+        "CHAT"
+      ],
+      "skills": [
+        "English",
+        "Spanish"
+      ],
+      "vendor": null,
+      "startDate": "2025-01-13"
+    },
+    {
+      "id": "0181a329-bef2-4bf2-9667-8338f0648a6f",
+      "userId": "931fcf47-f255-48d2-bf04-733fca40acbb",
+      "email": "oluwaseun.ajayi@meridian.test",
+      "firstName": "Oluwaseun",
+      "lastName": "Ajayi",
+      "site": "Lagos",
+      "group": "brightlineB",
+      "queues": [
+        "Voice – Brightline",
+        "Chat – Brightline"
+      ],
+      "channels": [
+        "VOICE",
+        "CHAT"
+      ],
+      "skills": [
+        "English",
+        "Billing"
+      ],
+      "vendor": null,
+      "startDate": "2021-10-04"
+    },
+    {
+      "id": "9aba3fac-cc45-4f07-937f-4c1ee90b12f6",
+      "userId": "44ba080f-2d71-4711-b468-619b52e0ad10",
+      "email": "bea.castillo@meridian.test",
+      "firstName": "Bea",
+      "lastName": "Castillo",
+      "site": "Manila",
+      "group": "brightlineB",
+      "queues": [
+        "Voice – Brightline",
+        "Chat – Brightline"
+      ],
+      "channels": [
+        "VOICE",
+        "CHAT"
+      ],
+      "skills": [
+        "English",
+        "Tech Support"
+      ],
+      "vendor": "Atlas BPO",
+      "startDate": "2022-05-30"
+    },
+    {
+      "id": "a33c936c-ce0a-46d9-a57c-02ae976d8496",
+      "userId": "9f80a779-9452-40ad-a64b-fb4c4941b78b",
+      "email": "joshua.ramos@meridian.test",
+      "firstName": "Joshua",
+      "lastName": "Ramos",
+      "site": "Manila",
+      "group": "brightlineB",
+      "queues": [
+        "Voice – Brightline",
+        "Chat – Brightline"
+      ],
+      "channels": [
+        "VOICE",
+        "CHAT"
+      ],
+      "skills": [
+        "English"
+      ],
+      "vendor": "Atlas BPO",
+      "startDate": "2024-01-22"
+    },
+    {
+      "id": "6d0d94a1-3432-441c-b417-0d8bcc67d862",
+      "userId": "59d47054-7ff2-4f92-9d23-5559786b4925",
+      "email": "hannah.wright@meridian.test",
+      "firstName": "Hannah",
+      "lastName": "Wright",
+      "site": "Austin",
+      "group": "brightlineB",
+      "queues": [
+        "Voice – Brightline",
+        "Chat – Brightline"
+      ],
+      "channels": [
+        "VOICE",
+        "CHAT"
+      ],
+      "skills": [
+        "English",
+        "Billing"
+      ],
+      "vendor": null,
+      "startDate": "2020-03-16"
+    },
+    {
+      "id": "1f78acc5-3fc9-4cad-bfec-452cc2b50add",
+      "userId": "8fd44f8e-bb42-44eb-add8-fea4510ea4f6",
+      "email": "lucia.fernandez@meridian.test",
+      "firstName": "Lucia",
+      "lastName": "Fernandez",
+      "site": "Austin",
+      "group": "brightlineB",
+      "queues": [
+        "Voice – Brightline",
+        "Chat – Brightline"
+      ],
+      "channels": [
+        "VOICE",
+        "CHAT"
+      ],
+      "skills": [
+        "English",
+        "Spanish"
+      ],
+      "vendor": null,
+      "startDate": "2023-08-14"
+    },
+    {
+      "id": "fc965190-d840-4585-83ce-1eb401783767",
+      "userId": "29d9b38f-9717-49af-aa90-3f1dfb4c8194",
+      "email": "jasmine.carter@meridian.test",
+      "firstName": "Jasmine",
+      "lastName": "Carter",
+      "site": "Austin",
+      "group": "harbor",
+      "queues": [
+        "Voice – Harbor"
+      ],
+      "channels": [
+        "VOICE"
+      ],
+      "skills": [
+        "English"
+      ],
+      "vendor": null,
+      "startDate": "2019-04-22"
+    },
+    {
+      "id": "78ae51c2-1f26-4a7c-86be-1a6c68d9f4de",
+      "userId": "c5773320-bb9c-451d-9ae2-5429be9e6c71",
+      "email": "ngozi.eze@meridian.test",
+      "firstName": "Ngozi",
+      "lastName": "Eze",
+      "site": "Lagos",
+      "group": "harbor",
+      "queues": [
+        "Voice – Harbor"
+      ],
+      "channels": [
+        "VOICE"
+      ],
+      "skills": [
+        "English"
+      ],
+      "vendor": "Summit Connect",
+      "startDate": "2022-02-07"
+    },
+    {
+      "id": "12a11a7c-29b6-4444-831a-6f085ae871d5",
+      "userId": "13d00633-90bd-476f-902e-f76ec9bde0bc",
+      "email": "paolo.villanueva@meridian.test",
+      "firstName": "Paolo",
+      "lastName": "Villanueva",
+      "site": "Manila",
+      "group": "harbor",
+      "queues": [
+        "Voice – Harbor"
+      ],
+      "channels": [
+        "VOICE"
+      ],
+      "skills": [
+        "English"
+      ],
+      "vendor": "Summit Connect",
+      "startDate": "2023-10-02"
+    },
+    {
+      "id": "a622d6ed-8241-4f70-a594-87c3072f3d7e",
+      "userId": "44bdff3e-c56f-452a-8417-01c20e49926f",
+      "email": "camila.torres@meridian.test",
+      "firstName": "Camila",
+      "lastName": "Torres",
+      "site": "Austin",
+      "group": "harbor",
+      "queues": [
+        "Voice – Harbor"
+      ],
+      "channels": [
+        "VOICE"
+      ],
+      "skills": [
+        "English",
+        "Spanish"
+      ],
+      "vendor": null,
+      "startDate": "2020-12-01"
+    },
+    {
+      "id": "7f27bad9-a874-47dc-84ae-91fa7a580f91",
+      "userId": "953ca78c-2846-42cf-8fd2-ba848a3b285a",
+      "email": "ibrahim.musa@meridian.test",
+      "firstName": "Ibrahim",
+      "lastName": "Musa",
+      "site": "Lagos",
+      "group": "harbor",
+      "queues": [
+        "Voice – Harbor"
+      ],
+      "channels": [
+        "VOICE"
+      ],
+      "skills": [
+        "English"
+      ],
+      "vendor": "Summit Connect",
+      "startDate": "2024-08-19"
+    },
+    {
+      "id": "5b7740ca-dc58-48ef-8317-3a1f34fe92d4",
+      "userId": "44b92082-f922-49dd-88b2-c0dbca60630e",
+      "email": "kayode.adebayo@meridian.test",
+      "firstName": "Kayode",
+      "lastName": "Adebayo",
+      "site": "Lagos",
+      "group": "cobalt",
+      "queues": [
+        "Email – Cobalt"
+      ],
+      "channels": [
+        "EMAIL"
+      ],
+      "skills": [
+        "English",
+        "Billing"
+      ],
+      "vendor": "Summit Connect",
+      "startDate": "2021-05-17"
+    },
+    {
+      "id": "bd5f8b5e-2887-4130-8bb1-62d1b640d560",
+      "userId": "fd6f6c88-7bf8-4c29-97cc-b52824a6515c",
+      "email": "liza.mendoza@meridian.test",
+      "firstName": "Liza",
+      "lastName": "Mendoza",
+      "site": "Manila",
+      "group": "cobalt",
+      "queues": [
+        "Email – Cobalt"
+      ],
+      "channels": [
+        "EMAIL"
+      ],
+      "skills": [
+        "English",
+        "Billing"
+      ],
+      "vendor": "Summit Connect",
+      "startDate": "2022-11-28"
+    },
+    {
+      "id": "a17d4c17-6ac5-452b-9540-fd4c4174d674",
+      "userId": "c0b4b6ca-943a-4326-85bd-3760aed494b0",
+      "email": "ryan.mitchell@meridian.test",
+      "firstName": "Ryan",
+      "lastName": "Mitchell",
+      "site": "Austin",
+      "group": "cobalt",
+      "queues": [
+        "Email – Cobalt"
+      ],
+      "channels": [
+        "EMAIL"
+      ],
+      "skills": [
+        "English"
+      ],
+      "vendor": null,
+      "startDate": "2019-09-09"
+    },
+    {
+      "id": "cbe2cf5c-a328-465f-bd5d-76cc44717c98",
+      "userId": "92b65034-0442-4948-ae62-5552f99e3ec7",
+      "email": "valentina.rojas@meridian.test",
+      "firstName": "Valentina",
+      "lastName": "Rojas",
+      "site": "Austin",
+      "group": "cobalt",
+      "queues": [
+        "Email – Cobalt"
+      ],
+      "channels": [
+        "EMAIL"
+      ],
+      "skills": [
+        "English",
+        "Spanish"
+      ],
+      "vendor": null,
+      "startDate": "2023-03-06"
+    },
+    {
+      "id": "c9f015ce-9242-4075-a681-539f557715a4",
+      "userId": "34ba0267-6c57-45ee-88fd-d4f30ac3009f",
+      "email": "emeka.obi@meridian.test",
+      "firstName": "Emeka",
+      "lastName": "Obi",
+      "site": "Lagos",
+      "group": "northwind",
+      "queues": [
+        "Voice – Northwind"
+      ],
+      "channels": [
+        "VOICE"
+      ],
+      "skills": [
+        "English",
+        "Tech Support"
+      ],
+      "vendor": null,
+      "startDate": "2020-06-15"
+    },
+    {
+      "id": "b2fd06f0-d699-48f3-9e72-d02ff0a60880",
+      "userId": "a21e678d-cd61-42ea-b6b2-46ba0c9966a5",
+      "email": "aisha.bello@meridian.test",
+      "firstName": "Aisha",
+      "lastName": "Bello",
+      "site": "Lagos",
+      "group": "northwind",
+      "queues": [
+        "Voice – Northwind"
+      ],
+      "channels": [
+        "VOICE"
+      ],
+      "skills": [
+        "English"
+      ],
+      "vendor": null,
+      "startDate": "2022-01-10"
+    },
+    {
+      "id": "f50a25d0-37ff-4f62-b05a-f7611edcb00a",
+      "userId": "a8bcedcd-a9a5-44f1-b3b2-6dd4c6114a4f",
+      "email": "ifeoma.chukwu@meridian.test",
+      "firstName": "Ifeoma",
+      "lastName": "Chukwu",
+      "site": "Lagos",
+      "group": "northwind",
+      "queues": [
+        "Voice – Northwind"
+      ],
+      "channels": [
+        "VOICE"
+      ],
+      "skills": [
+        "English",
+        "Billing"
+      ],
+      "vendor": null,
+      "startDate": "2024-02-12"
+    },
+    {
+      "id": "32903791-29e9-4f9d-8ff2-d079b4c9d54e",
+      "userId": "38410431-7f48-4f0c-bab3-24ab700b2558",
+      "email": "rafael.aquino@meridian.test",
+      "firstName": "Rafael",
+      "lastName": "Aquino",
+      "site": "Manila",
+      "group": "northwind",
+      "queues": [
+        "Voice – Northwind"
+      ],
+      "channels": [
+        "VOICE"
+      ],
+      "skills": [
+        "English"
+      ],
+      "vendor": "Atlas BPO",
+      "startDate": "2021-08-23"
+    },
+    {
+      "id": "f813f416-c1e1-4b55-bf82-4d3f09efac28",
+      "userId": "b8bda7a5-6933-41d0-bbfb-48f1d400d4f4",
+      "email": "kristine.bautista@meridian.test",
+      "firstName": "Kristine",
+      "lastName": "Bautista",
+      "site": "Manila",
+      "group": "northwind",
+      "queues": [
+        "Voice – Northwind"
+      ],
+      "channels": [
+        "VOICE"
+      ],
+      "skills": [
+        "English",
+        "Billing"
+      ],
+      "vendor": "Atlas BPO",
+      "startDate": "2023-05-15"
+    },
+    {
+      "id": "28323706-05e9-460f-8b75-d4de983ec9b5",
+      "userId": "25fb3be6-741f-41fe-8f13-57d64af80456",
+      "email": "carlo.navarro@meridian.test",
+      "firstName": "Carlo",
+      "lastName": "Navarro",
+      "site": "Manila",
+      "group": "northwind",
+      "queues": [
+        "Voice – Northwind"
+      ],
+      "channels": [
+        "VOICE"
+      ],
+      "skills": [
+        "English",
+        "Tech Support"
+      ],
+      "vendor": "Atlas BPO",
+      "startDate": "2025-03-03"
+    },
+    {
+      "id": "521d110e-3d7b-43f8-9d41-7b6ac36abe73",
+      "userId": "faa6a9b2-4c6f-4616-8616-fe3c38664b72",
+      "email": "tyler.johnson@meridian.test",
+      "firstName": "Tyler",
+      "lastName": "Johnson",
+      "site": "Austin",
+      "group": "northwind",
+      "queues": [
+        "Voice – Northwind"
+      ],
+      "channels": [
+        "VOICE"
+      ],
+      "skills": [
+        "English"
+      ],
+      "vendor": null,
+      "startDate": "2019-02-25"
+    },
+    {
+      "id": "cc912119-a3a4-47c6-a100-b573a70b9f6a",
+      "userId": "ed70bee2-b13a-4c48-a283-7f67dc2f53bd",
+      "email": "brianna.davis@meridian.test",
+      "firstName": "Brianna",
+      "lastName": "Davis",
+      "site": "Austin",
+      "group": "northwind",
+      "queues": [
+        "Voice – Northwind"
+      ],
+      "channels": [
+        "VOICE"
+      ],
+      "skills": [
+        "English",
+        "Tech Support"
+      ],
+      "vendor": null,
+      "startDate": "2022-07-18"
+    },
+    {
+      "id": "8d637e8d-56d1-4c89-abe0-f6081856cb48",
+      "userId": "c650bfff-5461-4065-b4e6-47c04c2a99a4",
+      "email": "mateo.gonzalez@meridian.test",
+      "firstName": "Mateo",
+      "lastName": "Gonzalez",
+      "site": "Austin",
+      "group": "northwind",
+      "queues": [
+        "Voice – Northwind"
+      ],
+      "channels": [
+        "VOICE"
+      ],
+      "skills": [
+        "English",
+        "Spanish"
+      ],
+      "vendor": null,
+      "startDate": "2024-10-07"
+    }
+  ],
+  "northwindAgentIds": [
+    "c9f015ce-9242-4075-a681-539f557715a4",
+    "b2fd06f0-d699-48f3-9e72-d02ff0a60880",
+    "f50a25d0-37ff-4f62-b05a-f7611edcb00a",
+    "32903791-29e9-4f9d-8ff2-d079b4c9d54e",
+    "f813f416-c1e1-4b55-bf82-4d3f09efac28",
+    "28323706-05e9-460f-8b75-d4de983ec9b5",
+    "521d110e-3d7b-43f8-9d41-7b6ac36abe73",
+    "cc912119-a3a4-47c6-a100-b573a70b9f6a",
+    "8d637e8d-56d1-4c89-abe0-f6081856cb48"
+  ],
+  "schedules": {
+    "brightline:2026-10-19": {
+      "id": "67967297-0dfb-4472-a40b-1f2664c7e066",
+      "campaign": "brightline",
+      "weekStart": "2026-10-19",
+      "status": "PUBLISHED",
+      "slots": 324
+    },
+    "brightline:2026-10-26": {
+      "id": "b9ac10b3-a7e3-47b8-829f-df0995c29d98",
+      "campaign": "brightline",
+      "weekStart": "2026-10-26",
+      "status": "PUBLISHED",
+      "slots": 324
+    },
+    "harbor:2026-10-19": {
+      "id": "993363dc-683d-4ff5-9f73-417d9a0da5ac",
+      "campaign": "harbor",
+      "weekStart": "2026-10-19",
+      "status": "PUBLISHED",
+      "slots": 84
+    },
+    "cobalt:2026-10-19": {
+      "id": "2c28e3bc-b73e-4062-a46b-b4afd5418521",
+      "campaign": "cobalt",
+      "weekStart": "2026-10-19",
+      "status": "PUBLISHED",
+      "slots": 72
+    },
+    "brightline:2026-10-12": {
+      "id": "24f0706f-09f2-4212-a817-c97c8cc86797",
+      "campaign": "brightline",
+      "weekStart": "2026-10-12",
+      "status": "PUBLISHED",
+      "slots": -1
+    },
+    "brightline:2026-10-05": {
+      "id": "0701ac7b-9e6b-467f-80fa-d6dfd491b5be",
+      "campaign": "brightline",
+      "weekStart": "2026-10-05",
+      "status": "PUBLISHED",
+      "slots": -1
+    },
+    "brightline:2026-09-28": {
+      "id": "3c933381-096f-4b6a-b607-992633f0fea8",
+      "campaign": "brightline",
+      "weekStart": "2026-09-28",
+      "status": "PUBLISHED",
+      "slots": -1
+    },
+    "harbor:2026-10-12": {
+      "id": "2bcad78f-eccf-4a17-a695-335c4fcf3909",
+      "campaign": "harbor",
+      "weekStart": "2026-10-12",
+      "status": "PUBLISHED",
+      "slots": -1
+    },
+    "harbor:2026-10-05": {
+      "id": "4a677477-cc06-4d77-b35a-6f9789a34ac7",
+      "campaign": "harbor",
+      "weekStart": "2026-10-05",
+      "status": "PUBLISHED",
+      "slots": -1
+    },
+    "harbor:2026-09-28": {
+      "id": "3635db16-ea77-4ebd-a9b1-39f18fece344",
+      "campaign": "harbor",
+      "weekStart": "2026-09-28",
+      "status": "PUBLISHED",
+      "slots": -1
+    },
+    "cobalt:2026-10-12": {
+      "id": "66299f94-9657-43e7-8e1c-de883c26fbb2",
+      "campaign": "cobalt",
+      "weekStart": "2026-10-12",
+      "status": "PUBLISHED",
+      "slots": -1
+    },
+    "cobalt:2026-10-05": {
+      "id": "51504999-68bd-4d07-b0b1-68ba462f781e",
+      "campaign": "cobalt",
+      "weekStart": "2026-10-05",
+      "status": "PUBLISHED",
+      "slots": -1
+    },
+    "cobalt:2026-09-28": {
+      "id": "e81dfad5-d319-4df0-9e92-de1f45e14279",
+      "campaign": "cobalt",
+      "weekStart": "2026-09-28",
+      "status": "PUBLISHED",
+      "slots": -1
+    }
+  },
+  "portal": {
+    "persona": {
+      "name": "Amara Nwosu",
+      "email": "amara.nwosu@meridian.test",
+      "agentId": "6e73f5b3-ecb2-4d41-a36e-31260f897550",
+      "userId": "9b5f5ec9-6a70-4b55-8237-a996b590c309",
+      "team": "Brightline Care A"
+    },
+    "vtoOffer": {
+      "id": "6fab1cf3-64f4-49c0-b337-ffc7d200b102",
+      "date": "2026-10-27",
+      "startTime": "13:00",
+      "endTime": "15:00",
+      "queueId": "ab8ca153-30a8-431e-9c9a-858c159c8b4b"
+    },
+    "incomingSwap": {
+      "id": "415b2947-fb8f-4042-91bd-7799a68185d0",
+      "from": "Chinedu Okeke",
+      "date": "2026-10-26",
+      "theirShift": "14:00:00-22:00:00",
+      "herShift": "07:00:00-15:00:00"
+    },
+    "timeOff": [
+      {
+        "who": "Amara",
+        "startDate": "2026-11-13",
+        "endDate": "2026-11-13",
+        "leaveType": "ANNUAL",
+        "expected": "APPROVED"
+      },
+      {
+        "who": "Amara",
+        "startDate": "2026-12-23",
+        "endDate": "2026-12-24",
+        "leaveType": "PERSONAL",
+        "expected": "PENDING"
+      },
+      {
+        "who": "Kevin",
+        "startDate": "2026-11-02",
+        "endDate": "2026-11-04",
+        "leaveType": "ANNUAL",
+        "expected": "PENDING"
+      },
+      {
+        "who": "Maria",
+        "startDate": "2026-10-30",
+        "endDate": "2026-10-30",
+        "leaveType": "PERSONAL",
+        "expected": "PENDING"
+      },
+      {
+        "who": "Sofia",
+        "startDate": "2026-11-09",
+        "endDate": "2026-11-11",
+        "leaveType": "ANNUAL",
+        "expected": "PENDING"
+      }
+    ],
+    "exceptions": [
+      {
+        "who": "Kevin",
+        "reasonCode": "SYSTEM_ISSUE",
+        "startAt": "2026-10-22T07:00:00.000Z",
+        "status": "APPROVED"
+      },
+      {
+        "who": "Maria",
+        "reasonCode": "MANAGER_APPROVED",
+        "startAt": "2026-10-22T15:00:00.000Z",
+        "status": "APPROVED"
+      },
+      {
+        "who": "Tunde",
+        "reasonCode": "EARLY_LEAVE",
+        "startAt": "2026-10-22T21:00:00.000Z",
+        "status": "PENDING"
+      },
+      {
+        "who": "Jose",
+        "reasonCode": "LATE_START",
+        "startAt": "2026-10-23T14:00:00.000Z",
+        "status": "PENDING"
+      }
+    ]
+  },
+  "activity": {
+    "agents": [
+      "6e73f5b3-ecb2-4d41-a36e-31260f897550",
+      "e6a85432-eb1c-486c-967a-dd3fb8f83778",
+      "95790dec-5f45-4453-a07e-5578d0b01330",
+      "9a51c048-c6a1-475e-9102-38d5842c4deb",
+      "c72f903d-e60b-460b-a2fa-7c52b575f6ba",
+      "d7f120c3-45f0-4112-8352-8004e35779b3",
+      "de1f594b-2650-4863-8ac6-975f14b9e553",
+      "2bd20373-a95b-40a6-8929-4fc83518b9b8",
+      "13e862a8-bc81-4441-ad36-81092d51bf3b",
+      "0181a329-bef2-4bf2-9667-8338f0648a6f",
+      "9aba3fac-cc45-4f07-937f-4c1ee90b12f6",
+      "a33c936c-ce0a-46d9-a57c-02ae976d8496",
+      "6d0d94a1-3432-441c-b417-0d8bcc67d862",
+      "1f78acc5-3fc9-4cad-bfec-452cc2b50add",
+      "fc965190-d840-4585-83ce-1eb401783767",
+      "78ae51c2-1f26-4a7c-86be-1a6c68d9f4de",
+      "12a11a7c-29b6-4444-831a-6f085ae871d5",
+      "a622d6ed-8241-4f70-a594-87c3072f3d7e",
+      "5b7740ca-dc58-48ef-8317-3a1f34fe92d4",
+      "bd5f8b5e-2887-4130-8bb1-62d1b640d560",
+      "a17d4c17-6ac5-452b-9540-fd4c4174d674",
+      "cbe2cf5c-a328-465f-bd5d-76cc44717c98"
+    ],
+    "conflictAgent": "d7f120c3-45f0-4112-8352-8004e35779b3",
+    "gapAgent": "9a51c048-c6a1-475e-9102-38d5842c4deb",
+    "devices": {
+      "LOS-WS-0101": {
+        "deviceId": "6ad0638a-e747-4cd4-acff-5adfd2df2355",
+        "secret": "hVN7GQD-UWm8FOzQTxO-Be4axdZMY_v0NoAH7xdiB5k",
+        "machine": "LOS-WS-0101",
+        "forAgent": "6e73f5b3-ecb2-4d41-a36e-31260f897550"
+      },
+      "LOS-WS-0108": {
+        "deviceId": "16c92dc2-6c78-4d31-a0be-413f7a1450a2",
+        "secret": "AuicEo_sj-1-C1-n1IduON0j8UOF76B0_K5R92Wqn3A",
+        "machine": "LOS-WS-0108",
+        "forAgent": "e6a85432-eb1c-486c-967a-dd3fb8f83778"
+      },
+      "LOS-WS-0115": {
+        "deviceId": "4de18fae-fd10-48c8-b92e-eba1ad1b74f5",
+        "secret": "4BdJpH-0AhC8CbKiwY0S6bGG_Z6jQEnSxU5CpkwO40g",
+        "machine": "LOS-WS-0115",
+        "forAgent": "95790dec-5f45-4453-a07e-5578d0b01330"
+      },
+      "LOS-WS-0122": {
+        "deviceId": "32724aae-bcfc-4d37-b04e-597aaa160078",
+        "secret": "HSCFknCv8vZGSwsgOVCW0mWGlNC0Db6NBa16cwsF5dA",
+        "machine": "LOS-WS-0122",
+        "forAgent": "9a51c048-c6a1-475e-9102-38d5842c4deb"
+      },
+      "MNL-WS-0129": {
+        "deviceId": "d6493249-46ba-4ed0-8fbe-fa350ee36758",
+        "secret": "N2dCMie2TJ8-6Xvav0uJm8PrXnL_ISaGWIs-0ZrOu6U",
+        "machine": "MNL-WS-0129",
+        "forAgent": "c72f903d-e60b-460b-a2fa-7c52b575f6ba"
+      },
+      "MNL-WS-0136": {
+        "deviceId": "3655dedd-baef-42ab-9072-61e28fe779ab",
+        "secret": "rvB9C9lNQj984fHxiok5t_nv007LjYDXP3DUiYuNL_k",
+        "machine": "MNL-WS-0136",
+        "forAgent": "d7f120c3-45f0-4112-8352-8004e35779b3"
+      },
+      "MNL-WS-0143": {
+        "deviceId": "ebe259e3-71c7-4e29-9c09-c519e55e05c3",
+        "secret": "IwdpPeHA90Ek410f0PEtYmNGgADJoX7n0uavD4Loqs0",
+        "machine": "MNL-WS-0143",
+        "forAgent": "de1f594b-2650-4863-8ac6-975f14b9e553"
+      },
+      "AUS-WS-0150": {
+        "deviceId": "3bc29305-bd5f-48bb-bd03-1c606c387abc",
+        "secret": "dhC3zM1AODMSmQdlpPwHPpHmSFgxgnb4XknjtYQZa2A",
+        "machine": "AUS-WS-0150",
+        "forAgent": "2bd20373-a95b-40a6-8929-4fc83518b9b8"
+      },
+      "AUS-WS-0157": {
+        "deviceId": "115c8749-d3b3-4048-a2fb-4c52771f44a0",
+        "secret": "iWaszCHZI9OsJ4Ryy65l1wq4ceFpbZtkCC0cQKQUPxI",
+        "machine": "AUS-WS-0157",
+        "forAgent": "13e862a8-bc81-4441-ad36-81092d51bf3b"
+      },
+      "MNL-WS-0164": {
+        "deviceId": "e8afcc1e-e7d9-4405-9498-96c2bfcaa70f",
+        "secret": "3q6f9Y3oyHa_yMegfubgwXglDdPKzpuy8M48IdjmHxU",
+        "machine": "MNL-WS-0164",
+        "forAgent": "9aba3fac-cc45-4f07-937f-4c1ee90b12f6"
+      },
+      "AUS-WS-0171": {
+        "deviceId": "90406494-6314-4720-80df-e8834f834a37",
+        "secret": "7O2r_VjMJ01YDYJZiAEZGY7xBhts_vO7LYdJ0Umwcis",
+        "machine": "AUS-WS-0171",
+        "forAgent": "6d0d94a1-3432-441c-b417-0d8bcc67d862"
+      },
+      "MNL-LT-0388": {
+        "deviceId": "f9b856b8-a1a6-4bc0-bb6f-73f5fff4ad06",
+        "secret": "aXhyNPWCtJyIyk49snrOoXBSYusLmVHUXx4vjtscYQ8",
+        "machine": "MNL-LT-0388",
+        "forAgent": "d7f120c3-45f0-4112-8352-8004e35779b3"
+      },
+      "MNL-WS-0219": {
+        "deviceId": "3ae3a0be-cb08-4a0a-8fc9-3b04e99ac71b",
+        "secret": "fBQrmBiTJ94R__8W4zVaciHOr_DDvlf2BPcF6hx4IFA",
+        "machine": "MNL-WS-0219",
+        "forAgent": null
+      },
+      "LOS-WS-0164": {
+        "deviceId": "85da5102-fe0a-44f4-9d84-06d705c95c3b",
+        "secret": "J0a6t-luuhW4ThGjsAwdD5IX0jW6_fKJIiMaRxJz8tM",
+        "machine": "LOS-WS-0164",
+        "forAgent": "0181a329-bef2-4bf2-9667-8338f0648a6f"
+      },
+      "MNL-WS-0171": {
+        "deviceId": "e719a8ca-a0a8-4a50-bfda-3b7776ca6711",
+        "secret": "E4TsgLzz53n87RSbaF_wlyWzNityEp4_nQh_FDlAnqM",
+        "machine": "MNL-WS-0171",
+        "forAgent": "9aba3fac-cc45-4f07-937f-4c1ee90b12f6"
+      },
+      "MNL-WS-0178": {
+        "deviceId": "39b60661-b526-4bdf-870b-b785d69c7acf",
+        "secret": "weDVarvpblelJhps-U0aM-zrWKp-kqcqW43wbYFj7m0",
+        "machine": "MNL-WS-0178",
+        "forAgent": "a33c936c-ce0a-46d9-a57c-02ae976d8496"
+      },
+      "AUS-WS-0185": {
+        "deviceId": "9fa9f6cb-8e67-4414-a956-03fe44ec1a57",
+        "secret": "JFhfEiDhiBrRi4hpPGSTL0Q-lqmh-Q1FGa7KCTuFEJ0",
+        "machine": "AUS-WS-0185",
+        "forAgent": "6d0d94a1-3432-441c-b417-0d8bcc67d862"
+      },
+      "AUS-WS-0192": {
+        "deviceId": "f62e52f5-b66b-4a8e-827c-7b9018c5ade0",
+        "secret": "HbW9SWOGc0sLj9PqTXRgN5zgZ5CWzQfc2qm_vczMJUo",
+        "machine": "AUS-WS-0192",
+        "forAgent": "1f78acc5-3fc9-4cad-bfec-452cc2b50add"
+      },
+      "AUS-WS-0199": {
+        "deviceId": "0c3cb676-82ff-4a7d-9081-a24df7562db7",
+        "secret": "5BkXIH-rFzHjUy7dqI9c-lQojBbtZcuwaXZW8Jkwiw0",
+        "machine": "AUS-WS-0199",
+        "forAgent": "fc965190-d840-4585-83ce-1eb401783767"
+      },
+      "LOS-WS-0206": {
+        "deviceId": "3bd22138-1292-472d-8c00-0c4699de2420",
+        "secret": "rKEjT8p3gw1mtqNRS0TGNcdEG4P1pFvO3d8lvaTqap0",
+        "machine": "LOS-WS-0206",
+        "forAgent": "78ae51c2-1f26-4a7c-86be-1a6c68d9f4de"
+      },
+      "MNL-WS-0213": {
+        "deviceId": "c97bfca0-77ae-41a9-bb8b-c70810aed12a",
+        "secret": "VhnfW5We6Vls6AU2ZR4D7eh9ZUayn1709eB0Iv4Wilc",
+        "machine": "MNL-WS-0213",
+        "forAgent": "12a11a7c-29b6-4444-831a-6f085ae871d5"
+      },
+      "AUS-WS-0220": {
+        "deviceId": "32cf5801-8bc3-47ea-8cbe-3f5f6a8c0901",
+        "secret": "JjWkQd9PoadDfh5X-rZZv2bVd65R4BeQ8IsHqZ98LAI",
+        "machine": "AUS-WS-0220",
+        "forAgent": "a622d6ed-8241-4f70-a594-87c3072f3d7e"
+      },
+      "LOS-WS-0227": {
+        "deviceId": "6d9b7971-5561-414a-ae1e-3eefa32383b2",
+        "secret": "QR2E0URulP1Rg9VWoLjDo1h5ziW3FZSQaAHz1uoilTI",
+        "machine": "LOS-WS-0227",
+        "forAgent": "5b7740ca-dc58-48ef-8317-3a1f34fe92d4"
+      },
+      "MNL-WS-0234": {
+        "deviceId": "3b47282c-75ce-46c9-bca0-fe665ef5bef9",
+        "secret": "HumNeadf-B081ySC1AV3oy6aA4DsbuGMDWEOufuj_Bc",
+        "machine": "MNL-WS-0234",
+        "forAgent": "bd5f8b5e-2887-4130-8bb1-62d1b640d560"
+      },
+      "AUS-WS-0241": {
+        "deviceId": "30b8fcd6-0b57-4fbd-a466-1dac9766071f",
+        "secret": "LrnksxasTJs4NkJ_zLri0ID2KSc8kTyHBgQIRPm8Icw",
+        "machine": "AUS-WS-0241",
+        "forAgent": "a17d4c17-6ac5-452b-9540-fd4c4174d674"
+      },
+      "AUS-WS-0248": {
+        "deviceId": "421dcda8-e48f-43f4-917d-b7ff5f2c93cd",
+        "secret": "jyx6oepAFCBXENpzeFD2CLVviPd2RFYXCLZ24XwSeTY",
+        "machine": "AUS-WS-0248",
+        "forAgent": "cbe2cf5c-a328-465f-bd5d-76cc44717c98"
+      }
+    }
+  },
+  "importWizard": {
+    "file": "C:\\dev\\freelance\\wfm-demo-video\\setup\\northwind-staffing-grid.xlsx",
+    "gridName": "Northwind Voice — staffing grid",
+    "profile": {
+      "id": "northwind-voice-15m",
+      "label": "Northwind — 15-min interval headcount",
+      "sheet": 0,
+      "sheetName": "Sheet1",
+      "orientation": "long",
+      "orientationLabel": "Long / tidy (one queue per row)",
+      "headerRow": 1,
+      "dataStartRow": 2,
+      "intervalMinutes": 15,
+      "timezone": "UTC",
+      "dateEncoding": "iso_string",
+      "dateEncodingLabel": "ISO string",
+      "timeEncoding": "hh_mm_string",
+      "timeEncodingLabel": "HH:MM string",
+      "requirementBasis": "as_supplied",
+      "requirementBasisLabel": "As supplied",
+      "columns": {
+        "date": "Date",
+        "interval": "Interval",
+        "queue": "Queue",
+        "requirement": "Requirement"
+      },
+      "queues": [
+        "Voice – Northwind"
+      ]
+    },
+    "notes": [
+      "Interval minutes must be changed from the 30 default to 15.",
+      "Queue name in the file is \"Voice – Northwind\" with an EN DASH (U+2013); pick it from \"Queues to import\" (the campaign must already have the queue linked), do not tick \"My file labels queues differently\".",
+      "The contract must be 15-minute, timezone UTC, preset Interval compliance, effective on/before 2026-10-26 (grid covers 2026-10-19..2026-11-08)."
+    ]
+  },
+  "notes": [],
+  "testImport": {
+    "throwawayQueueId": "70f1a22c-3359-4be1-8860-dcc299853ba0",
+    "import": {
+      "canCommit": true,
+      "gridId": "9431f349-019b-4b34-8372-7f6d1d7b5771",
+      "stagedRows": 1260,
+      "rejections": 0,
+      "warnings": 0
+    },
+    "requirementRows": 1260,
+    "generate": {
+      "slots": 180,
+      "warnings": {
+        "UNDER_COVERAGE": 7,
+        "break": 4,
+        "RELIEF_TOPUP_SKIPPED": 1
+      }
+    },
+    "coverageMonday": {
+      "workSlots": 9,
+      "agentsUsedInWeek": 9
+    },
+    "complianceEvaluate": "{\"contractId\":\"e63a4b55-ab03-4596-8507-c4a73ce41493\",\"evaluations\":[{\"id\":\"0ac5b5cb-47e4-473e-aca3-e1e16a6c7e01\",\"policyKind\":\"interval_match\",\"status\":\"breach\",\"evaluatedAt\":\"2026-10-22T22:41:38.317Z\",\"summary\":{\"measurable\":true,\"breachCount\":223,\"toleranceMode\":\"absolute\",\"toleranceOver\":0,\"toler"
+  },
+  "logins": {
+    "url": "http://localhost:3000",
+    "tenantSlug": "meridian",
+    "tenantId": "fb5762a2-3101-4657-9879-744bdbad6d86",
+    "password": "SecurePass123!",
+    "note": "Login sends x-tenant-id or tenantSlug; all users were created via /users/bootstrap so none must change password.",
+    "admin": "admin@meridian.test (Dana Okafor, ADMIN)",
+    "analyst": "analyst@meridian.test (Priya Raman, WFM_ANALYST)",
+    "supervisor": "supervisor@meridian.test (Marcus Bell, SUPERVISOR)",
+    "vendor": "vendor@atlasbpo.test (Leo Hart, VENDOR → Atlas BPO portal)",
+    "agentPersona": "amara.nwosu@meridian.test (Amara Nwosu, AGENT, Brightline Care A)",
+    "agents": [
+      "amara.nwosu@meridian.test",
+      "chinedu.okeke@meridian.test",
+      "funmilayo.adeyemi@meridian.test",
+      "tunde.bakare@meridian.test",
+      "maria.santos@meridian.test",
+      "jose.delacruz@meridian.test",
+      "angelica.reyes@meridian.test",
+      "kevin.brooks@meridian.test",
+      "sofia.martinez@meridian.test",
+      "diego.hernandez@meridian.test",
+      "oluwaseun.ajayi@meridian.test",
+      "bea.castillo@meridian.test",
+      "joshua.ramos@meridian.test",
+      "hannah.wright@meridian.test",
+      "lucia.fernandez@meridian.test",
+      "jasmine.carter@meridian.test",
+      "ngozi.eze@meridian.test",
+      "paolo.villanueva@meridian.test",
+      "camila.torres@meridian.test",
+      "ibrahim.musa@meridian.test",
+      "kayode.adebayo@meridian.test",
+      "liza.mendoza@meridian.test",
+      "ryan.mitchell@meridian.test",
+      "valentina.rojas@meridian.test",
+      "emeka.obi@meridian.test",
+      "aisha.bello@meridian.test",
+      "ifeoma.chukwu@meridian.test",
+      "rafael.aquino@meridian.test",
+      "kristine.bautista@meridian.test",
+      "carlo.navarro@meridian.test",
+      "tyler.johnson@meridian.test",
+      "brianna.davis@meridian.test",
+      "mateo.gonzalez@meridian.test"
+    ]
+  },
+  "northwindOnCamera": {
+    "client": "Northwind Delivery",
+    "campaign": "(any name, e.g. \"Delivery Support\")",
+    "contract": {
+      "effectiveFrom": "2026-10-19 (any date on/before 2026-10-26)",
+      "intervalMinutes": 15,
+      "timezone": "UTC",
+      "weekStartDay": "MONDAY",
+      "shrinkagePercent": "any (grid is as-supplied)",
+      "preset": "interval_compliance (Interval compliance)"
+    },
+    "queue": {
+      "link": "Voice – Northwind",
+      "queueId": "2b653956-78a5-477b-a005-7828079453d3",
+      "planningUnit": "interval_headcount (default)"
+    },
+    "order": [
+      "1. Create client Northwind Delivery → campaign → contract (15-min, UTC) → apply Interval compliance preset",
+      "2. Link queue \"Voice – Northwind\" to the campaign (must happen before the import: the wizard scope lists linked queue names)",
+      "3. Import northwind-staffing-grid.xlsx with importWizard choices → Preview (1260 rows, 0 rejections) → Commit",
+      "4. Off camera: prepareNorthwindForGenerate(campaignId) (team \"Northwind Voice A\" + 9 agents + 4 Mon–Fri templates); optionally relaxNorthwindCompliance(campaignId) before Publish",
+      "5. Scheduling → scope Northwind campaign → week of 2026-10-26 → Generate (≈180 slots, 9 agents, Mon–Fri; ~7 minor under-coverage intervals Monday evening)"
+    ],
+    "agents": [
+      {
+        "id": "c9f015ce-9242-4075-a681-539f557715a4",
+        "name": "Emeka Obi",
+        "site": "Lagos"
+      },
+      {
+        "id": "b2fd06f0-d699-48f3-9e72-d02ff0a60880",
+        "name": "Aisha Bello",
+        "site": "Lagos"
+      },
+      {
+        "id": "f50a25d0-37ff-4f62-b05a-f7611edcb00a",
+        "name": "Ifeoma Chukwu",
+        "site": "Lagos"
+      },
+      {
+        "id": "32903791-29e9-4f9d-8ff2-d079b4c9d54e",
+        "name": "Rafael Aquino",
+        "site": "Manila"
+      },
+      {
+        "id": "f813f416-c1e1-4b55-bf82-4d3f09efac28",
+        "name": "Kristine Bautista",
+        "site": "Manila"
+      },
+      {
+        "id": "28323706-05e9-460f-8b75-d4de983ec9b5",
+        "name": "Carlo Navarro",
+        "site": "Manila"
+      },
+      {
+        "id": "521d110e-3d7b-43f8-9d41-7b6ac36abe73",
+        "name": "Tyler Johnson",
+        "site": "Austin"
+      },
+      {
+        "id": "cc912119-a3a4-47c6-a100-b573a70b9f6a",
+        "name": "Brianna Davis",
+        "site": "Austin"
+      },
+      {
+        "id": "8d637e8d-56d1-4c89-abe0-f6081856cb48",
+        "name": "Mateo Gonzalez",
+        "site": "Austin"
+      }
+    ]
+  },
+  "howTo": {
+    "pushLiveStatuses": "import { pushLiveStatuses } from './setup/setup-demo.ts'; await pushLiveStatuses();  // or: npx tsx setup/setup-demo.ts live",
+    "prepareNorthwindForGenerate": "await prepareNorthwindForGenerate('<northwind campaignId>')  // or: NORTHWIND_CAMPAIGN_ID=<id> [RELAX_COMPLIANCE=1] npx tsx setup/setup-demo.ts northwind",
+    "refreshDesktopActivityForAnotherDay": "await simulateDesktopDay(loadState(), 'YYYY-MM-DD'); await pingDevices(loadState())"
+  }
+}

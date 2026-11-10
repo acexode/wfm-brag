@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Kasuwa intro</title><link rel="stylesheet" href="slides.css"></head>
+<body>
+<div class="brand"><div class="logo">K</div><div><div class="name">Kasuwa</div><div class="sub">WORKFORCE</div></div></div>
+
+<section class="step" id="s1">
+  <div class="kicker">Workforce management</div>
+  <h1>The right people, in the right seat, at the right time.</h1>
+  <p class="lead">Every contact center runs on that promise. Workforce management software is how it gets kept.</p>
+</section>
+
+<section class="step" id="s2">
+  <div class="kicker">The problem</div>
+  <h2>Today's leading tools were built for in-house teams that staff to a service level.</h2>
+  <div class="spread pop">
+    <span class="chip">NICE</span><span class="chip">Genesys</span><span class="chip">Assembled</span>
+  </div>
+  <p class="lead">Outsourcers don't work that way.</p>
+</section>
+
+<section class="step" id="s3">
+  <div class="kicker">Every client, a different contract</div>
+  <h2>So planners rebuild the real requirement in spreadsheets.</h2>
+  <div class="cards pop">
+    <div class="card"><span class="tag">Headcount</span><div class="big">40 seats, 9 to 5</div><div class="small">Paid for seats filled, not calls answered.</div></div>
+    <div class="card"><span class="tag">Interval compliance</span><div class="big">A staffing grid every week</div><div class="small">Penalized on every 15-minute interval missed.</div></div>
+    <div class="card"><span class="tag">Ticket workload</span><div class="big">Paid per ticket</div><div class="small">Sized by the work, not by a service level.</div></div>
+  </div>
+</section>
+
+<section class="step" id="s4">
+  <div class="kicker">Kasuwa</div>
+  <h1>The contract is the source of truth.</h1>
+  <div class="flow pop">
+    <div class="node root">Contract</div><div class="arrow">→</div>
+    <div class="node">Forecast</div><div class="arrow">→</div>
+    <div class="node">Schedule</div><div class="arrow">→</div>
+    <div class="node">Publish</div><div class="arrow">→</div>
+    <div class="node">Compliance</div>
+  </div>
+</section>
+
+<script>
+  window.step = (id) => {
+    document.querySelectorAll('.step').forEach((s) => s.classList.toggle('on', s.id === id));
+    const items = document.querySelectorAll(`#${id} .pop > *`);
+    items.forEach((el, i) => setTimeout(() => el.classList.add('on'), 500 + i * 380));
+  };
+</script>
+</body></html>

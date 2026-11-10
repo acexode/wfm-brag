@@ -1,0 +1,11 @@
+import { Director } from '../lib/director.js';
+const d = new Director('_smoke');
+await d.open();
+await d.goto('/login');
+await d.startRecording();
+await d.badge('01', 'Smoke test');
+await d.callout('Multi-tenant · database-level isolation', 'Security');
+await d.hover(d.page.locator('input').first());
+await d.type(d.page.locator('input').first(), 'meridian');
+await d.pause(1500);
+console.log(await d.finish());

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Kasuwa comparison</title><link rel="stylesheet" href="slides.css"></head>
+<body>
+<div class="brand"><div class="logo">K</div><div><div class="name">Kasuwa</div><div class="sub">WORKFORCE</div></div></div>
+
+<section class="step" id="s1" style="justify-content:flex-start;padding-top:130px">
+  <div class="kicker">How Kasuwa is different</div>
+  <h2 style="font-size:46px">Built for the contract, not just the call.</h2>
+  <table class="cmp">
+    <thead><tr><th></th><th class="us">Kasuwa</th><th>Assembled</th><th>NICE CXone WFM</th><th>Genesys Cloud WEM</th></tr></thead>
+    <tbody class="pop">
+      <tr><td>Built for</td><td class="us">Outsourcers &amp; multi-client operations</td><td>In-house digital support</td><td>Large enterprise centers</td><td>Centers routing on Genesys</td></tr>
+      <tr><td>"Correctly staffed" defined per contract</td><td class="us yes">4 operating models</td><td class="no">Service level</td><td class="no">Service level</td><td class="no">Service level</td></tr>
+      <tr><td>Client staffing grids, versioned</td><td class="us yes">Built in</td><td class="no">—</td><td class="no">—</td><td class="no">—</td></tr>
+      <tr><td>Contract check before publish</td><td class="us yes">Per policy</td><td class="no">—</td><td class="no">—</td><td class="no">—</td></tr>
+      <tr><td>Desktop activity vs. schedule</td><td class="us yes">Built in, privacy-gated</td><td class="no">—</td><td>Separate product</td><td class="no">—</td></tr>
+      <tr><td>Phone-system independent</td><td class="us yes">Yes</td><td class="yes">Yes</td><td>Strongest on NICE</td><td>Strongest on Genesys</td></tr>
+    </tbody>
+  </table>
+</section>
+<div class="foot">Based on publicly available product information, October 2026.</div>
+
+<script>
+  window.step = (id, rows) => {
+    document.querySelectorAll('.step').forEach((s) => s.classList.toggle('on', s.id === id));
+    const items = [...document.querySelectorAll(`#${id} .pop > *`)];
+    const [from, to] = rows ?? [0, items.length];
+    items.slice(from, to).forEach((el, i) => setTimeout(() => el.classList.add('on'), 300 + i * 450));
+  };
+</script>
+</body></html>

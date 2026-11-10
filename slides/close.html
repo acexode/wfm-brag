@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Kasuwa close</title><link rel="stylesheet" href="slides.css"></head>
+<body>
+<div class="brand"><div class="logo">K</div><div><div class="name">Kasuwa</div><div class="sub">WORKFORCE</div></div></div>
+
+<section class="step" id="s1">
+  <div class="kicker">Live today</div>
+  <h2>Contracts, demand import, forecasting, scheduling, compliance, real-time adherence, desktop activity, and self-service for agents and vendors.</h2>
+  <div class="kicker" style="margin-top:56px">Next</div>
+  <div class="roadmap pop">
+    <div class="card"><div class="big">Native phone &amp; ticketing integrations</div></div>
+    <div class="card"><div class="big">AI forecasting &amp; agent copilot</div></div>
+    <div class="card"><div class="big">Enterprise single sign-on</div></div>
+  </div>
+</section>
+
+<section class="step" id="s2" style="align-items:center;text-align:center">
+  <div class="brand" style="position:static;margin-bottom:40px;transform:scale(1.8)"><div class="logo">K</div><div style="text-align:left"><div class="name">Kasuwa</div><div class="sub">WORKFORCE</div></div></div>
+  <h1 style="font-size:64px;max-width:1300px">Workforce management that speaks the language of outsourcing.</h1>
+</section>
+
+<script>
+  window.step = (id) => {
+    document.querySelectorAll('.step').forEach((s) => s.classList.toggle('on', s.id === id));
+    document.querySelector('body > .brand').style.opacity = id === 's2' ? '0' : '1';
+    const items = document.querySelectorAll(`#${id} .pop > *`);
+    items.forEach((el, i) => setTimeout(() => el.classList.add('on'), 600 + i * 400));
+  };
+</script>
+</body></html>
